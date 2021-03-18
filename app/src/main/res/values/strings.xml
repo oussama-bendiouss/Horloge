@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Horloge</string>
+    <string name="bouton_connecter">se connecter</string>
+    <string name="bouton_deconnecter">se deconnecter</string>
+    <string name="bouton_entrer">Entrer</string>
+    <string name="error_not_connected">Vous devez vous connecter !</string>
+    <string name="error_authentication_canceled">Authentification annulée&#8230;</string>
+    <string name="error_no_internet">Aucune connexion internet !</string>
+    <string name="error_unknown_error">Une erreur inconnue s\'est produite&#8230;</string>
+    <string name="connection_succeed">Authentification réussie !</string>
+    <string name="button_login_text_logged">Welcome</string>
+    <string name="button_login_text_not_logged">Connexion</string>
+    <string name="tu_dois_connecter">Vous n\'etes pas connecté</string>
+
+
+    <!-- Ressource de l'interface principale-->
+    <string name="Count_down">count down</string>
+    <string name="Chrono">Chronomètre</string>
+    <string name="wake_up">Réveil</string>
+
+
+</resources>

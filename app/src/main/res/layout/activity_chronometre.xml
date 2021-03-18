@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:id="@+id/interface_principale"
+    tools:context=".Interface.Chronometre">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="173dp"
+        android:layout_height="165dp"
+        android:src="@drawable/logo"
+        android:contentDescription="@string/Chrono"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.067"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.028" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="545dp"
+        android:layout_margin="3dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.424"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.004">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/chrono"
+                android:onClick="Chrono"
+                android:backgroundTint="@color/black"
+                android:text="@string/Chrono"
+                android:textSize="10sp"
+                 />
+
+            <Button
+                android:id="@+id/count_down"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="CountDown"
+                android:backgroundTint="@color/black"
+                android:text="@string/Count_down"
+                android:textSize="10sp" />
+
+
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/zoneconfig"
+            android:layout_width="match_parent"
+            android:layout_height="487dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+            app:layout_constraintVertical_bias="1.0">
+
+            <Chronometer
+                android:layout_width="186dp"
+                android:layout_height="122dp"
+                android:textSize="50sp"
+                android:id="@+id/chronometer"
+                app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.736"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.498">
+
+                <ImageButton
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="5dp"
+                    android:contentDescription="TODO"
+                    android:gravity="right"
+                    android:onClick="startChronometer"
+                    android:src="@drawable/ic_stat_start" />
+
+                <ImageButton
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:onClick="pauseChronometer"
+                    android:src="@drawable/ic_stat_pause" />
+
+                <ImageButton
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="5dp"
+                    android:gravity="left"
+                    android:onClick="resetChronometer"
+                    android:src="@drawable/ic_stat_stop" />
+
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

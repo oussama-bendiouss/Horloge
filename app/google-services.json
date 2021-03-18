@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "39384359615",
+    "project_id": "horloge-b1d44",
+    "storage_bucket": "horloge-b1d44.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:39384359615:android:3837ccddfc0ca3ceb21c0a",
+        "android_client_info": {
+          "package_name": "com.outil.Horloge"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "39384359615-8rhkpmlgv2shq9gbr60gpmcdaphqouu6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCfivJCGOhy801Zp-gErVl9YJZAfl4iugI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "39384359615-8rhkpmlgv2shq9gbr60gpmcdaphqouu6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
